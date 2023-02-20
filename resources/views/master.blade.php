@@ -64,6 +64,9 @@
         .tag_1:hover .tag_2{
             display: block;
         }
+        .error{
+            color: red;
+        }
 
     </style>
 
@@ -113,15 +116,15 @@
                             </div>
                         </li>
 
-                        <li class="dropdown">
-                            <a href="#">Specialized </a>
+{{--                        <li class="dropdown">--}}
+{{--                            <a href="#">Specialized </a>--}}
 
-                        </li>
-                        <li class="dropdown">
-                            <a href="#">Projects</a>
+{{--                        </li>--}}
+{{--                        <li class="dropdown">--}}
+{{--                            <a href="#">Projects</a>--}}
 
-                        </li>
-                        <li><a href="/contact"><smal>Contact Us</smal></a></li>
+{{--                        </li>--}}
+                        <li><a href="{{route('contact')}}"><smal>Contact Us</smal></a></li>
 
                         @if(Session::get('lange') == 'en')
                             <li><a href="{{ url('lang/ar') }}">Arabic</a></li>

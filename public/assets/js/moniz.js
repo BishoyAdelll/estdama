@@ -326,6 +326,9 @@
           required: true,
           email: true
         },
+        phone: {
+          required: true,
+        },
         message: {
           required: true
         },
@@ -343,6 +346,8 @@
             $(form).find('input[type="text"]').val("");
             $(form).find('input[type="email"]').val("");
             $(form).find("textarea").val("");
+            // $('.success').append(response);
+            $('.success').show();
           }
         );
         return false;

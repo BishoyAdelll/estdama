@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 17, 2023 at 04:42 PM
+-- Generation Time: Feb 20, 2023 at 12:10 PM
 -- Server version: 5.7.36
 -- PHP Version: 8.1.0
 
@@ -109,24 +109,33 @@ CREATE TABLE IF NOT EXISTS `contacts` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `email` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `phone` int(11) DEFAULT NULL,
+  `phone` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `subject` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `message` text COLLATE utf8mb4_unicode_ci,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `contacts`
 --
 
 INSERT INTO `contacts` (`id`, `name`, `email`, `phone`, `subject`, `message`, `created_at`, `updated_at`) VALUES
-(1, 'Nikolas Brooten', 'bishoya610@gmail.com', 1226764759, 'desigen', 'asjdhahdkjajkds', '2023-02-17 13:27:53', '2023-02-17 13:27:53'),
-(2, 'Nikolas Brooten', 'bishoya610@gmail.com', 1226764759, 'desigen', 'asdasd', '2023-02-17 13:37:02', '2023-02-17 13:37:02'),
-(3, 'Harish Ham', 'bishoya610@gmail.com', 1226764759, 'jkasjkdsasjdksa', 'asdasdads', '2023-02-17 13:37:48', '2023-02-17 13:37:48'),
-(4, 'mario', 'bishoya610@gmail.com', 1226764759, 'desigen', 'saASDASDA', '2023-02-17 13:40:13', '2023-02-17 13:40:13'),
-(5, 'Shady Hany', 'bishoya610@gmail.com', 1226764759, 'jkasjkdsasjdksa', 'qWQWEQWEQE', '2023-02-17 13:47:03', '2023-02-17 13:47:03');
+(1, 'Nikolas Brooten', 'bishoya610@gmail.com', '1226764759', 'desigen', 'asjdhahdkjajkds', '2023-02-17 13:27:53', '2023-02-17 13:27:53'),
+(2, 'Nikolas Brooten', 'bishoya610@gmail.com', '1226764759', 'desigen', 'asdasd', '2023-02-17 13:37:02', '2023-02-17 13:37:02'),
+(3, 'Harish Ham', 'bishoya610@gmail.com', '1226764759', 'jkasjkdsasjdksa', 'asdasdads', '2023-02-17 13:37:48', '2023-02-17 13:37:48'),
+(4, 'mario', 'bishoya610@gmail.com', '1226764759', 'desigen', 'saASDASDA', '2023-02-17 13:40:13', '2023-02-17 13:40:13'),
+(5, 'Shady Hany', 'bishoya610@gmail.com', '1226764759', 'jkasjkdsasjdksa', 'qWQWEQWEQE', '2023-02-17 13:47:03', '2023-02-17 13:47:03'),
+(6, 'Tasha Bell', 'xonegozon@mailinator.com', '1232311132', 'Reprehenderit maior', 'Accusantium omnis co', '2023-02-20 09:51:43', '2023-02-20 09:51:43'),
+(7, 'Claire Vasquez', 'hutifaw@mailinator.com', '123123', 'Dolor voluptates exc', 'Tempora dolores exer', '2023-02-20 09:57:08', '2023-02-20 09:57:08'),
+(8, 'Dieter Newman', 'hylit@mailinator.com', '123123', 'Atque nobis cillum e', 'Autem error labore e', '2023-02-20 09:59:45', '2023-02-20 09:59:45'),
+(9, 'Kameko Mcdaniel', 'daxuhor@mailinator.com', '123123', 'Autem neque molestia', 'Temporibus qui accus', '2023-02-20 10:01:14', '2023-02-20 10:01:14'),
+(10, 'Danielle Jimenez', 'howihow@mailinator.com', '123123', 'Sapiente dolor sunt', 'Consequatur sed nis', '2023-02-20 10:01:45', '2023-02-20 10:01:45'),
+(11, 'Ebony Craft', 'kenowira@mailinator.com', '123123', 'Vero dolor dolorem n', 'Sequi dicta quo dign', '2023-02-20 10:02:18', '2023-02-20 10:02:18'),
+(12, 'Alice Armstrong', 'xedeqy@mailinator.com', '123123', 'Sed non odit consequ', 'Sit mollit illum d', '2023-02-20 10:02:34', '2023-02-20 10:02:34'),
+(13, 'Hector Cunningham', 'lumezagysy@mailinator.com', '+1 (387) 183-9588', 'Qui blanditiis maior', 'Aut quasi magni ut d', '2023-02-20 10:08:33', '2023-02-20 10:08:33'),
+(14, 'Jakeem York', 'fakeden@mailinator.com', '123123', 'Nulla facere dolore', 'Quia sequi harum asp', '2023-02-20 10:10:16', '2023-02-20 10:10:16');
 
 -- --------------------------------------------------------
 

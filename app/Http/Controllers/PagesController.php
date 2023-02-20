@@ -83,14 +83,14 @@ class PagesController extends Controller
     }
     //----------------------------------------------------message
     public function store (){
-        $contact=new Contact();
-        $contact->name =request('name');
-        $contact->email =request('email');
-        $contact->phone =request('phone');
-        $contact->subject =request('subject');
-        $contact->message =request('message');
+        $contact = new Contact();
+        $contact->name = request('name');
+        $contact->email = request('email');
+        $contact->phone = request('phone');
+        $contact->subject = request('subject');
+        $contact->message = request('message');
         $contact->save();
-        return redirect()->route('contact')->with('success','record created successfully');
+        return redirect()->route('contact');
 
     }
 }

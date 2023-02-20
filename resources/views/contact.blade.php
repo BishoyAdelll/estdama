@@ -27,14 +27,12 @@
             </div>
             <div class="row">
                 <div class="col-xl-12">
-                    @if ($message= Session::get('success'))
-                        <div class="alert alert-info">
-                            <p> {{ $message }}</p>
+                        <div class="alert alert-info success" style="display:none;">
+                            <p>Your message has been sent. Thank you.</p>
                         </div>
-                    @endif
                     <div class="contact-page__form">
 
-                        <form action="{{route('contactForm')}}" class="comment-one__form contact-form-validated"
+                        <form action="{{route('contactForm')}}" class="contact-form-validated"
                                method="post">
                             @csrf
                             <div class="row">
